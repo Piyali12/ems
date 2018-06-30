@@ -1,0 +1,24 @@
+    {% extends 'base.html' %}
+
+    {% block content %}>
+   <center> <style>
+        .bordered {
+        width: 500px;
+        height:300px;
+        padding: 20px;
+        border: 6px inset maroon;
+        }
+
+    </style>
+<div class ="bordered">
+
+
+    <center> <h2><u> Detail page !!!! </u></h2>
+        <h3>{{question.title}}</h3>
+         <p><b>Answer is {{question.created_by.first_name}}</b></p></center>
+
+
+    </div>
+   </center>
+
+    {% endblock content %}
